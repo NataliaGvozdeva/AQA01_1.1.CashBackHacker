@@ -18,4 +18,19 @@ public class CashbackHackServiceTest {
         assertEquals(actual, expected);
     }
 
+    @Test
+    public void ifAmountEqual1000(){
+        //подготовка
+        CashbackHackService service = new CashbackHackService();
+        int amount = 1000;
+
+        //выполнение целевого действия
+        int actual = service.remain(amount);
+        int expected = 0;
+
+        //сравнение ожидаемого и фактического
+        assertEquals(actual, expected);
+
+    }
+
 }
